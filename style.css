@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  background: url("beautiful_landscape.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+#draft {
+  display: flex;
+  justify-content: space-between;
+}
+
+#writing {
+  font-size: 1.5rem;
+  align-items: center;
+  border: none;
+  text-align: center;
+  border: 0;
+  outline: 0;
+}
+
+.hide {
+  opacity: 0%;
+}
+
+.hardhide {
+  opacity: 0%;
+}
+
+.todo:hover > .hide {
+  opacity: 90%;
+  transition: all 0.5s ease;
+}
+
+header {
+  height: 100vh;
+  width: 330px;
+  min-width: 330px;
+  background-color: aliceblue;
+  opacity: 85%;
+}
+
+main {
+  height: 100vh;
+  flex: 1;
+}
+
+.head {
+  margin: 1rem;
+}
+
+.mylist {
+  margin: 1rem;
+  border: 0.5px solid black;
+  width: 500px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.addfield {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addfield > * {
+  margin: 0.5rem 2rem;
+  font-size: 1.5rem;
+}
+
+.list {
+  margin: 1rem;
+  border: 0.5px solid red;
+}
+
+.todo {
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.todaylist,
+.tomorrowlist {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.todaylist > *,
+.tomorrowlist > * {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-circle,
+.fa-circle-check {
+  padding: 0.5rem;
+}
+
+.fa-circle-xmark {
+  padding: 0.5rem;
+}
+
+.texttodo {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.completed {
+  background-color: rgb(230, 228, 228);
+  opacity: 70%;
+}
+
+.textcompleted {
+  text-decoration: line-through;
+}
+
+p.todo {
+  word-wrap: normal;
+}
+
+.topcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  align-items: center;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: rgb(205, 145, 145);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle > * {
+  font-size: 35px;
+}
+
+.midcontainer {
+  background-color: rgb(230, 228, 228);
+  color: #0066cc;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.midcontainer > * {
+  font-size: 20px;
+}
+
+.bluecheck {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.botcontainer {
+  padding: 1.5rem;
+  display: flex;
+}
+
+.botcontainer > * {
+  margin-left: 3rem;
+  padding: 0.3rem 1rem;
+}
+
+.count {
+  background-color: rgb(230, 228, 228);
+  border-radius: 5px;
+}
